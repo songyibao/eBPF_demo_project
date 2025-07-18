@@ -1,0 +1,15 @@
+# 基础缩进
+BasedOnStyle: Google
+AccessModifierOffset: -1
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+
+# 括号格式
+BreakBeforeBraces: Attach
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+
+# 空格与换行
+ColumnLimit: 80
+MaxEmptyLinesToKeep: 1
