@@ -31,6 +31,10 @@ sudo apt install clang llvm linux-headers-$(uname -r)
 
 监测主机上所有的进程退出事件
 
+### vfsnoop
+
+监测Linux IO子系统中VFS层的读写系统调用
+
 ### iosnoop
 
 监测Linux IO子系统中块设备层的读写请求
@@ -62,7 +66,7 @@ sudo apt install clang llvm linux-headers-$(uname -r)
 
 在`Makefile`文件中增加新的target
 ```Makefile
-TARGETS := dns example ...
+TARGETS := dns new_target_name ...
 ```
 假设这里使用`example`作为新的target的名称，根据项目结构，分别以`example`为MainName添加共享头文件`example.bpf.h`、eBPF程序`example.bpf.c`、用户态代理程序`example.cpp`即可，需要注意名称必须保持一致，make过程中会根据这个规则进行检测，详见 Makefile
 
