@@ -104,7 +104,7 @@ sudo output/example
 
 分析结果展示
 
-![](/assets/dns_grafana.png)
+![](./assets/dns_grafana.png)
 
 
 
